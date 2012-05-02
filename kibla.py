@@ -3,7 +3,7 @@
 
 
 #a==============================================================================
-#a    Objective : account of the Qiblah                                                      
+#a    Objective : Calculation of Qiblah.
 #a    Author: Ahmed Raghdi <asmaaarab@gmail.com>                                   
 #a    License: "Waqf" General Public License :
 #a    http://www.ojuba.org/wiki/doku.php/waqf/license 
@@ -30,8 +30,8 @@ dif_lat_makka = 90-lat_makka
 
 def Leeway(lat_city, lon_city):
     '''
-    take latitude & longitude of city
-    retun leeway of Qiblah by degrees
+    Take latitude & longitude of city
+    Return leeway of Qiblah by degrees
     '''
     dif_lon = math.fabs(lon_city - lon_makka)
     dif_lat_city = (90 - lat_city)
@@ -47,7 +47,7 @@ def Leeway(lat_city, lon_city):
 def Direction(lat_city, lon_city):
     '''
     Take latitude & longitude of city
-    retun direction of Qiblah
+    Return direction of Qiblah
     '''
     if lon_makka > lon_city :
         direction = "East"
@@ -64,8 +64,8 @@ def Direction(lat_city, lon_city):
 
 def Distance(lat_city, lon_city):
     '''
-    take latitude & longitude of city
-    retun distance from Makkah by km
+    Take latitude & longitude of city
+    Retun distance between city and Makkah "by km".
     '''
     R = 6378.1
     dif_lon = math.fabs(lon_makka-lon_city)
