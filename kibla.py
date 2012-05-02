@@ -46,7 +46,7 @@ def Leeway(lat_city, lon_city):
 
 def Direction(lat_city, lon_city):
     '''
-    take latitude & longitude of city
+    Take latitude & longitude of city
     retun direction of Qiblah
     '''
     if lon_makka > lon_city :
