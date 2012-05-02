@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: Kibla
+Version: 0.1
+Summary: Account of the Qiblah
+Home-page: https://github.com/RaaH/kibla
+Author: Ahmed Raghdi
+Author-email: asmaaarab@gmail.com
+License: Waqf License
+Description: UNKNOWN
+Keywords: Qiblah,Prayer,Makkah
+Platform: Linux
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta

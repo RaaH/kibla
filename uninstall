@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $UID -eq 0 ]; then
+	if [ -e installed-files.txt ]; then
+		for i in $( cat installed-files.txt ); do
+			if [ -e '/'$i ]; then
+				rm '/'$i
+			fi
+		done
+		rm installed-files.txt
+		rm -R build
+	fi
+else
+	echo "Run this file as root (ex: sudo $0)."
+fi
